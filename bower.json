@@ -1,0 +1,22 @@
+{
+  "name": "wok",
+  "version": "0.0.1",
+  "authors": [
+    "CoffeeDeveloper <coffeedeveloper@gmail.com>"
+  ],
+  "description": "wok css framework",
+  "main": "wok.css",
+  "keywords": [
+    "wok",
+    "framework"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/coffeedeveloper/wok",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
