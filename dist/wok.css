@@ -36,9 +36,34 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (min-width: 1170px) {
+.wok-list-unstyled {
+  list-style: none;
+}
+.wok-list-inline {
+  padding-left: 0;
+  list-style: none;
+  display: inline-block;
+}
+.wok-list-inline:before,
+.wok-list-inline:after {
+  content: " ";
+  display: table;
+}
+.wok-list-inline:after {
+  clear: both;
+}
+.wok-list-inline li {
+  float: left;
+}
+
+@media (min-width: 80em) {
   .wok-container {
-    width: 1170px;
+    width: 80em;
+  }
+}
+@media (min-width: 60em) {
+  .wok-container {
+    width: 60em;
   }
 }
 

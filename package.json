@@ -3,7 +3,7 @@
   "description": "wok",
   "version": "0.0.2",
   "dependencies": {
-    "glup": "*",
+    "gulp": "*",
     "gulp-concat": "*",
     "gulp-minify-css": "*",
     "gulp-rename": "*",
