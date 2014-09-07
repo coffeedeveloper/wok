@@ -12,6 +12,10 @@
 .pull-right {
   float: right !important;
 }
+.hidden,
+[hidden] {
+  display: none !important;
+}
 .text-overflow {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -70,37 +74,37 @@ a:hover {
   width: 20%;
 }
 .wok-col-1 {
-  width: 8.333333333333334%;
+  width: 8.3333333333333%;
 }
 .wok-col-2 {
-  width: 16.666666666666668%;
+  width: 16.6666666666667%;
 }
 .wok-col-3 {
   width: 25%;
 }
 .wok-col-4 {
-  width: 33.333333333333336%;
+  width: 33.3333333333333%;
 }
 .wok-col-5 {
-  width: 41.66666666666667%;
+  width: 41.6666666666667%;
 }
 .wok-col-6 {
   width: 50%;
 }
 .wok-col-7 {
-  width: 58.333333333333336%;
+  width: 58.3333333333333%;
 }
 .wok-col-8 {
-  width: 66.66666666666667%;
+  width: 66.6666666666667%;
 }
 .wok-col-9 {
   width: 75%;
 }
 .wok-col-10 {
-  width: 83.33333333333334%;
+  width: 83.3333333333333%;
 }
 .wok-col-11 {
-  width: 91.66666666666667%;
+  width: 91.6666666666667%;
 }
 .wok-col-12 {
   width: 100%;

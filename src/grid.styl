@@ -25,6 +25,6 @@
     width: 20%
 
 for $i in 1..12
-  $temp = 100 / 12 * $i
+  $temp = 100 * ($i / 12)
   .wok-col-{$i}
     width: $temp + '%'
