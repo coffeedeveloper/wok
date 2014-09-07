@@ -9,3 +9,10 @@ textoverflow()
   overflow: hidden
   text-overflow: ellipsis
   white-space: nowrap
+
+setside(attr, val)
+  add-property(attr+'-left', val)
+  add-property(attr+'-right', val)
+
+setall(attr, val)
+  add-property(attr, val)

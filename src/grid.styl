@@ -1,0 +1,27 @@
+.wok-row
+  setside(padding, 1em)
+ 
+.wok-one.wok-row
+  .wok-column
+    width: 100%
+
+.wok-two.wok-row
+  .wok-column
+    width: 50%
+
+.wok-three.wok-row
+  .wok-column
+    width: 33.3333%
+
+.wok-four.wok-row
+  .wok-column
+    width: 25%
+
+.wok-five.wok-row
+  .wok-column
+    width: 20%
+
+for $i in 1..12
+  $temp = 100 / $i
+  .wok-column-{$i}
+    width: $temp + '%'
