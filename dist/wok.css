@@ -9,6 +9,10 @@
 [clearfix]:after {
   clear: both;
 }
+.overflow,
+[overflow] {
+  overflow: hidden;
+}
 .pull-left,
 [left] {
   float: left !important;
@@ -40,8 +44,8 @@
   text-align: center;
 }
 
-.btn,
-[btn] {
+.wok-btn,
+[wok-btn] {
   display: inline-block;
   padding: 6px 12px;
   text-align: center;
@@ -60,6 +64,17 @@ a:hover {
   text-decoration: underline;
 }
 
+.wok-row:before,
+[wok-row]:before,
+.wok-row:after,
+[wok-row]:after {
+  content: " ";
+  display: table;
+}
+.wok-row:after,
+[wok-row]:after {
+  clear: both;
+}
 .wok-row [class^="wok-col"],
 [wok-row] [class^="wok-col"],
 .wok-row [wok-col],
@@ -165,6 +180,7 @@ a:hover {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  vertical-align: top;
 }
 .wok-list-inline:before,
 [wok-list=inline]:before,
