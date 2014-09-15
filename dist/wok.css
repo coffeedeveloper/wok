@@ -43,35 +43,28 @@ a:hover {
   text-decoration: underline;
 }
 
-.wok-row {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-.wok-row:before,
-.wok-row:after {
-  content: " ";
-  display: table;
-}
-.wok-row:after {
-  clear: both;
-}
 .wok-row [class^="wok-col"] {
   float: left;
+  position: relative;
+  min-height: 1px;
 }
-.wok-one.wok-row .wok-col {
+.wok-row.wok-one .wok-col {
   width: 100%;
 }
-.wok-two.wok-row .wok-col {
+.wok-row.wok-two .wok-col {
   width: 50%;
 }
-.wok-three.wok-row .wok-col {
-  width: 33.3333%;
+.wok-row.wok-three .wok-col {
+  width: 33.333333333333336%;
 }
-.wok-four.wok-row .wok-col {
+.wok-row.wok-four .wok-col {
   width: 25%;
 }
-.wok-five.wok-row .wok-col {
+.wok-row.wok-five .wok-col {
   width: 20%;
+}
+.wok-row.wok-six .wok-col {
+  width: 16.666666666666668%;
 }
 .wok-col-1 {
   width: 8.3333333333333%;

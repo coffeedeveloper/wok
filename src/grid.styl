@@ -1,28 +1,16 @@
 .wok-row
-  setside(padding, 1em)
-  clearfix()
+  //setside(padding, 1em)
+  //clearfix()
   [class^="wok-col"]
     float: left
+    position: relative
+    min-height: 1px
  
-.wok-one.wok-row
-  .wok-col
-    width: 100%
-
-.wok-two.wok-row
-  .wok-col
-    width: 50%
-
-.wok-three.wok-row
-  .wok-col
-    width: 33.3333%
-
-.wok-four.wok-row
-  .wok-col
-    width: 25%
-
-.wok-five.wok-row
-  .wok-col
-    width: 20%
+$counts = one two three four five six
+for $count, $i in $counts
+  .wok-row.wok-{$count}
+    .wok-col
+      width: (100 / ($i + 1)) + '%'
 
 for $i in 1..12
   $temp = 100 * ($i / 12)
