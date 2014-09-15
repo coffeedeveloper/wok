@@ -1,33 +1,42 @@
 .clearfix:before,
-.clearfix:after {
+[clearfix]:before,
+.clearfix:after,
+[clearfix]:after {
   content: " ";
   display: table;
 }
-.clearfix:after {
+.clearfix:after,
+[clearfix]:after {
   clear: both;
 }
-.pull-left {
+.pull-left,
+[left] {
   float: left !important;
 }
-.pull-right {
+.pull-right,
+[right] {
   float: right !important;
 }
 .hidden,
 [hidden] {
   display: none !important;
 }
-.text-overflow {
+.text-overflow,
+[text-overflow] {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.text-left {
+.text-left,
+[text-left] {
   text-align: left;
 }
-.text-right {
+.text-right,
+[text-right] {
   text-align: right;
 }
-.text-center {
+.text-center,
+[text-center] {
   text-align: center;
 }
 
@@ -43,70 +52,106 @@ a:hover {
   text-decoration: underline;
 }
 
-.wok-row [class^="wok-col"] {
+.wok-row [class^="wok-col"],
+[wok-row] [class^="wok-col"],
+.wok-row [wok-col],
+[wok-row] [wok-col] {
   float: left;
   position: relative;
   min-height: 1px;
 }
-.wok-row.wok-one .wok-col {
+.wok-row.wok-one .wok-col,
+[wok-one] .wok-col,
+.wok-row.wok-one [wok-col],
+[wok-one] [wok-col] {
   width: 100%;
 }
-.wok-row.wok-two .wok-col {
+.wok-row.wok-two .wok-col,
+[wok-two] .wok-col,
+.wok-row.wok-two [wok-col],
+[wok-two] [wok-col] {
   width: 50%;
 }
-.wok-row.wok-three .wok-col {
+.wok-row.wok-three .wok-col,
+[wok-three] .wok-col,
+.wok-row.wok-three [wok-col],
+[wok-three] [wok-col] {
   width: 33.333333333333336%;
 }
-.wok-row.wok-four .wok-col {
+.wok-row.wok-four .wok-col,
+[wok-four] .wok-col,
+.wok-row.wok-four [wok-col],
+[wok-four] [wok-col] {
   width: 25%;
 }
-.wok-row.wok-five .wok-col {
+.wok-row.wok-five .wok-col,
+[wok-five] .wok-col,
+.wok-row.wok-five [wok-col],
+[wok-five] [wok-col] {
   width: 20%;
 }
-.wok-row.wok-six .wok-col {
+.wok-row.wok-six .wok-col,
+[wok-six] .wok-col,
+.wok-row.wok-six [wok-col],
+[wok-six] [wok-col] {
   width: 16.666666666666668%;
 }
-.wok-col-1 {
+.wok-col-1,
+[wok-col="1"] {
   width: 8.3333333333333%;
 }
-.wok-col-2 {
+.wok-col-2,
+[wok-col="2"] {
   width: 16.6666666666667%;
 }
-.wok-col-3 {
+.wok-col-3,
+[wok-col="3"] {
   width: 25%;
 }
-.wok-col-4 {
+.wok-col-4,
+[wok-col="4"] {
   width: 33.3333333333333%;
 }
-.wok-col-5 {
+.wok-col-5,
+[wok-col="5"] {
   width: 41.6666666666667%;
 }
-.wok-col-6 {
+.wok-col-6,
+[wok-col="6"] {
   width: 50%;
 }
-.wok-col-7 {
+.wok-col-7,
+[wok-col="7"] {
   width: 58.3333333333333%;
 }
-.wok-col-8 {
+.wok-col-8,
+[wok-col="8"] {
   width: 66.6666666666667%;
 }
-.wok-col-9 {
+.wok-col-9,
+[wok-col="9"] {
   width: 75%;
 }
-.wok-col-10 {
+.wok-col-10,
+[wok-col="10"] {
   width: 83.3333333333333%;
 }
-.wok-col-11 {
+.wok-col-11,
+[wok-col="11"] {
   width: 91.6666666666667%;
 }
-.wok-col-12 {
+.wok-col-12,
+[wok-col="12"] {
   width: 100%;
 }
 
-.wok-list-unstyled {
+.wok-list-unstyled,
+[wok-list=unstyled] {
   list-style: none;
+  padding-left: 0;
 }
-.wok-list-inline {
+.wok-list-inline,
+[wok-list=inline] {
   display: inline-block;
   margin-top: 0;
   margin-bottom: 0;
@@ -114,26 +159,32 @@ a:hover {
   list-style: none;
 }
 .wok-list-inline:before,
-.wok-list-inline:after {
+[wok-list=inline]:before,
+.wok-list-inline:after,
+[wok-list=inline]:after {
   content: " ";
   display: table;
 }
-.wok-list-inline:after {
+.wok-list-inline:after,
+[wok-list=inline]:after {
   clear: both;
 }
-.wok-list-inline li {
+.wok-list-inline li,
+[wok-list=inline] li {
   float: left;
   padding-left: 0.4em;
   padding-right: 0.4em;
 }
 
 @media (min-width: 60em) {
-  .wok-container {
+  .wok-container,
+  [wok-container] {
     width: 60em;
   }
 }
 @media (min-width: 80em) {
-  .wok-container {
+  .wok-container,
+  [wok-container] {
     width: 80em;
   }
 }
@@ -413,15 +464,19 @@ a:hover {
   stroke: #111;
 }
 
-.wok-container {
+.wok-container,
+[wok-container] {
   margin-left: auto;
   margin-right: auto;
 }
 .wok-container:before,
-.wok-container:after {
+[wok-container]:before,
+.wok-container:after,
+[wok-container]:after {
   content: " ";
   display: table;
 }
-.wok-container:after {
+.wok-container:after,
+[wok-container]:after {
   clear: both;
 }
