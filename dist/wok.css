@@ -1,3 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.4rem;
+}
+a {
+  color: #0074d9;
+  text-decoration: none;
+}
+a:hover {
+  color: #7fdbff;
+  text-decoration: underline;
+}
+
 .clearfix:before,
 [clearfix]:before,
 .clearfix:after,
@@ -47,21 +66,68 @@
 .wok-btn,
 [wok-btn] {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 0.5em 1em;
+  margin: 0;
   text-align: center;
   vertical-align: middle;
+  cursor: pointer;
+  font-size: 1.6rem;
+  background-color: transparent;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
-
-* {
-  box-sizing: border-box;
-}
-a {
-  color: #0074d9;
+.wok-btn:hover,
+[wok-btn]:hover {
   text-decoration: none;
 }
-a:hover {
-  color: #7fdbff;
-  text-decoration: underline;
+.wok-btn-default,
+[wok-btn="default"] {
+  background-color: #d4d4d4;
+  color: #414141;
+}
+.wok-btn-default:hover,
+[wok-btn="default"]:hover {
+  background-color: #aaa;
+  color: #414141;
+}
+.wok-btn-default,
+[wok-btn="warning"] {
+  background-color: #ff851b;
+  color: #fff;
+}
+.wok-btn-default:hover,
+[wok-btn="warning"]:hover {
+  background-color: #ff671b;
+  color: #fff;
+}
+.wok-btn-default,
+[wok-btn="danger"] {
+  background-color: #ff4136;
+  color: #fff;
+}
+.wok-btn-default:hover,
+[wok-btn="danger"]:hover {
+  background-color: #f70e00;
+  color: #fff;
+}
+
+.wok-container:before,
+[wok-container]:before,
+.wok-container:after,
+[wok-container]:after {
+  content: " ";
+  display: table;
+}
+.wok-container:after,
+[wok-container]:after {
+  clear: both;
+}
+.wok-container-fluid,
+[wok-container="fluid"] {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .wok-row:before,
@@ -196,20 +262,20 @@ a:hover {
 .wok-list-inline li,
 [wok-list=inline] li {
   float: left;
-  padding-left: 0.4em;
-  padding-right: 0.4em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
 }
 
-@media (min-width: 60em) {
+@media (min-width: 960px) {
   .wok-container,
   [wok-container] {
-    width: 60em;
+    width: 960px;
   }
 }
-@media (min-width: 80em) {
+@media (min-width: 1170px) {
   .wok-container,
   [wok-container] {
-    width: 80em;
+    width: 1170px;
   }
 }
 
@@ -488,19 +554,3 @@ a:hover {
   stroke: #111;
 }
 
-.wok-container,
-[wok-container] {
-  margin-left: auto;
-  margin-right: auto;
-}
-.wok-container:before,
-[wok-container]:before,
-.wok-container:after,
-[wok-container]:after {
-  content: " ";
-  display: table;
-}
-.wok-container:after,
-[wok-container]:after {
-  clear: both;
-}

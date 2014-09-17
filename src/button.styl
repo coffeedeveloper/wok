@@ -1,5 +1,22 @@
 .wok-btn, [wok-btn]
   display: inline-block
-  padding: 6px 12px
+  padding: .5em 1em
+  margin: 0
   text-align: center
   vertical-align: middle
+  cursor: pointer
+  font-size: 1.6rem
+  background-color: transparent
+  white-space: nowrap
+  border: 1px solid transparent
+  border-radius: 4px
+  &:hover
+    text-decoration: none
+
+for $type in default warning danger
+  .wok-btn-default, {s('[wok-btn="%s"]', $type)}
+    background-color: $btn-+$type+-bg
+    color: $btn-+$type+-color
+    &:hover
+      background-color: $btn-+$type+-hover-bg
+      color: $btn-+$type+-color

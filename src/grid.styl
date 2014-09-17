@@ -13,5 +13,5 @@ for $count, $i in $counts
 
 for $i in 1..12
   $temp = 100 * ($i / 12)
-  .wok-col-{$i}, [wok-col=\"{$i}\"]
+  .wok-col-{$i}, {s('[wok-col="%s"]', $i)}
     width: $temp + '%'
