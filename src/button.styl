@@ -13,10 +13,25 @@
   &:hover
     text-decoration: none
 
-for $type in default warning danger
-  .wok-btn-default, {s('[wok-btn="%s"]', $type)}
+for $type in default warning danger info success
+  .wok-btn-{$type}, {s('[wok-btn~="%s"]', $type)}
     background-color: $btn-+$type+-bg
     color: $btn-+$type+-color
     &:hover
       background-color: $btn-+$type+-hover-bg
       color: $btn-+$type+-color
+
+.wok-btn-xs, [wok-btn-size~="xs"]
+  padding: .2em .5em
+  font-size: 1.2rem
+
+.wok-btn-sm, [wok-btn-size~="sm"]
+  padding: .3em .6em
+  font-size: 1.4rem
+
+.wok-btn-lg, [wok-btn-size~="lg"]
+  padding: .8em 1.2em
+  font-size: 1.6rem
+//for $size in sm lg
+  //.wok-btn-{$size}, {s('[wok-btn-size~="%s"]', $size)}
+    //padding: 0

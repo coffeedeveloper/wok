@@ -16,11 +16,6 @@
 .text-overflow, [text-overflow]
   textoverflow()
 
-.text-left, [text-left]
-  text-align: left
-
-.text-right, [text-right]
-  text-align: right
-
-.text-center, [text-center]
-  text-align: center
+for $type in left right center
+  .text-{$type}, [text-{$type}]
+    text-align: $type

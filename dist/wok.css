@@ -82,36 +82,76 @@ a:hover {
   text-decoration: none;
 }
 .wok-btn-default,
-[wok-btn="default"] {
+[wok-btn~="default"] {
   background-color: #d4d4d4;
   color: #414141;
 }
 .wok-btn-default:hover,
-[wok-btn="default"]:hover {
+[wok-btn~="default"]:hover {
   background-color: #aaa;
   color: #414141;
 }
-.wok-btn-default,
-[wok-btn="warning"] {
+.wok-btn-warning,
+[wok-btn~="warning"] {
+  background-color: #ff9d49;
+  color: #fff;
+}
+.wok-btn-warning:hover,
+[wok-btn~="warning"]:hover {
   background-color: #ff851b;
   color: #fff;
 }
-.wok-btn-default:hover,
-[wok-btn="warning"]:hover {
-  background-color: #ff671b;
-  color: #fff;
-}
-.wok-btn-default,
-[wok-btn="danger"] {
+.wok-btn-danger,
+[wok-btn~="danger"] {
   background-color: #ff4136;
   color: #fff;
 }
-.wok-btn-default:hover,
-[wok-btn="danger"]:hover {
+.wok-btn-danger:hover,
+[wok-btn~="danger"]:hover {
   background-color: #f70e00;
   color: #fff;
 }
+.wok-btn-info,
+[wok-btn~="info"] {
+  background-color: #0074d9;
+  color: #fff;
+}
+.wok-btn-info:hover,
+[wok-btn~="info"]:hover {
+  background-color: #005dae;
+  color: #fff;
+}
+.wok-btn-success,
+[wok-btn~="success"] {
+  background-color: #2ecc40;
+  color: #fff;
+}
+.wok-btn-success:hover,
+[wok-btn~="success"]:hover {
+  background-color: #25a333;
+  color: #fff;
+}
+.wok-btn-xs,
+[wok-btn-size~="xs"] {
+  padding: 0.2em 0.5em;
+  font-size: 1.2rem;
+}
+.wok-btn-sm,
+[wok-btn-size~="sm"] {
+  padding: 0.3em 0.6em;
+  font-size: 1.4rem;
+}
+.wok-btn-lg,
+[wok-btn-size~="lg"] {
+  padding: 0.8em 1.2em;
+  font-size: 1.6rem;
+}
 
+.wok-container,
+[wok-container] {
+  margin-left: auto;
+  margin-right: auto;
+}
 .wok-container:before,
 [wok-container]:before,
 .wok-container:after,
@@ -126,8 +166,8 @@ a:hover {
 .wok-container-fluid,
 [wok-container="fluid"] {
   width: 100%;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .wok-row:before,

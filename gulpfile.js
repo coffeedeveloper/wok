@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     minifyCSS = require('gulp-minify-css')
 
 gulp.task('stylus', function () {
-  gulp.src('./src/*.styl')
+  gulp.src(['./src/global.styl','./src/*.styl'])
     .pipe(stylus({ use: [nib()], import: 'import/*.styl' }))
     .pipe(concat('wok.css'))
     .pipe(gulp.dest('./dist'))
