@@ -1,17 +1,17 @@
 .wok-row, [wok-row]
   clearfix()
-  [class^="wok-col"], [wok-col]
+  [class~="wok-col"], [wok-col]
     float: left
     position: relative
     min-height: 1px
- 
+
 $counts = one two three four five six
 for $count, $i in $counts
   .wok-row.wok-{$count}, [wok-{$count}]
     .wok-col, [wok-col]
-      width: (100 / ($i + 1)) + '%'
+      width (100 / ($i + 1)) + '%'
 
 for $i in 1..12
   $temp = 100 * ($i / 12)
   .wok-col-{$i}, {s('[wok-col="%s"]', $i)}
-    width: $temp + '%'
+    width $temp + '%'

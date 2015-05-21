@@ -1,9 +1,9 @@
-var gulp = require('gulp'),
-    stylus = require('gulp-stylus'),
-    nib = require('nib'),
-    concat = require('gulp-concat'),
-    rename = require('gulp-rename'),
-    minifyCSS = require('gulp-minify-css')
+var gulp      = require('gulp');
+var stylus    = require('gulp-stylus');
+var nib       = require('nib');
+var concat    = require('gulp-concat');
+var rename    = require('gulp-rename');
+var minifyCSS = require('gulp-minify-css');
 
 gulp.task('stylus', function () {
   gulp.src(['./src/global.styl','./src/*.styl'])
@@ -12,7 +12,7 @@ gulp.task('stylus', function () {
     .pipe(gulp.dest('./dist'))
     .pipe(minifyCSS())
     .pipe(rename('wok-min.css'))
-    .pipe(gulp.dest('./dist'))
-})
+    .pipe(gulp.dest('./dist'));
+});
 
-gulp.task('default', ['stylus'])
+gulp.task('default', ['stylus']);

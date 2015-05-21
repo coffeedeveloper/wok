@@ -165,9 +165,16 @@ a:hover {
 }
 .wok-container-fluid,
 [wok-container="fluid"] {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+}
+
+.wok-form input[type="text"],
+[wok-form] input[type="text"] {
+  padding: 0.5em 1em;
+  font-size: 1.4rem;
+  color: #555;
 }
 
 .wok-row:before,
@@ -181,8 +188,8 @@ a:hover {
 [wok-row]:after {
   clear: both;
 }
-.wok-row [class^="wok-col"],
-[wok-row] [class^="wok-col"],
+.wok-row [class~="wok-col"],
+[wok-row] [class~="wok-col"],
 .wok-row [wok-col],
 [wok-row] [wok-col] {
   float: left;
@@ -319,278 +326,274 @@ a:hover {
   }
 }
 
-/* ==========================================================================
-   SKINS
-
-   - Backgrounds
-   - Colors
-   - Border colors
-   - SVG fills
-   - SVG strokes
-
-   ========================================================================== */
-/* Backgrounds */
 .bg-navy {
-  background-color: #001f3f;
+  background-color: #000080;
+}
+.navy {
+  color: #000080;
+}
+border-navy {
+  border-color: #000080;
+}
+fill-navy {
+  fill: #000080;
+}
+stroke-navy {
+  stroke: #000080;
 }
 .bg-blue {
-  background-color: #0074d9;
+  background-color: #00f;
+}
+.blue {
+  color: #00f;
+}
+border-blue {
+  border-color: #00f;
+}
+fill-blue {
+  fill: #00f;
+}
+stroke-blue {
+  stroke: #00f;
 }
 .bg-aqua {
-  background-color: #7fdbff;
+  background-color: #0ff;
+}
+.aqua {
+  color: #0ff;
+}
+border-aqua {
+  border-color: #0ff;
+}
+fill-aqua {
+  fill: #0ff;
+}
+stroke-aqua {
+  stroke: #0ff;
 }
 .bg-teal {
-  background-color: #39cccc;
+  background-color: #008080;
+}
+.teal {
+  color: #008080;
+}
+border-teal {
+  border-color: #008080;
+}
+fill-teal {
+  fill: #008080;
+}
+stroke-teal {
+  stroke: #008080;
 }
 .bg-olive {
-  background-color: #3d9970;
+  background-color: #808000;
+}
+.olive {
+  color: #808000;
+}
+border-olive {
+  border-color: #808000;
+}
+fill-olive {
+  fill: #808000;
+}
+stroke-olive {
+  stroke: #808000;
 }
 .bg-green {
-  background-color: #2ecc40;
+  background-color: #008000;
+}
+.green {
+  color: #008000;
+}
+border-green {
+  border-color: #008000;
+}
+fill-green {
+  fill: #008000;
+}
+stroke-green {
+  stroke: #008000;
 }
 .bg-lime {
-  background-color: #01ff70;
+  background-color: #0f0;
+}
+.lime {
+  color: #0f0;
+}
+border-lime {
+  border-color: #0f0;
+}
+fill-lime {
+  fill: #0f0;
+}
+stroke-lime {
+  stroke: #0f0;
 }
 .bg-yellow {
-  background-color: #ffdc00;
+  background-color: #ff0;
+}
+.yellow {
+  color: #ff0;
+}
+border-yellow {
+  border-color: #ff0;
+}
+fill-yellow {
+  fill: #ff0;
+}
+stroke-yellow {
+  stroke: #ff0;
 }
 .bg-orange {
-  background-color: #ff851b;
+  background-color: #ffa500;
+}
+.orange {
+  color: #ffa500;
+}
+border-orange {
+  border-color: #ffa500;
+}
+fill-orange {
+  fill: #ffa500;
+}
+stroke-orange {
+  stroke: #ffa500;
 }
 .bg-red {
-  background-color: #ff4136;
+  background-color: #f00;
 }
-.bg-fuchsia {
-  background-color: #f012be;
+.red {
+  color: #f00;
 }
-.bg-purple {
-  background-color: #b10dc9;
+border-red {
+  border-color: #f00;
+}
+fill-red {
+  fill: #f00;
+}
+stroke-red {
+  stroke: #f00;
+}
+.bg-fuchasia {
+  background-color: ;
+}
+.fuchasia {
+  color: ;
+}
+border-fuchasia {
+  border-color: ;
+}
+fill-fuchasia {
+  fill: ;
+}
+stroke-fuchasia {
+  stroke: ;
 }
 .bg-maroon {
-  background-color: #85144b;
+  background-color: #800000;
+}
+.maroon {
+  color: #800000;
+}
+border-maroon {
+  border-color: #800000;
+}
+fill-maroon {
+  fill: #800000;
+}
+stroke-maroon {
+  stroke: #800000;
+}
+.bg-purple {
+  background-color: #800080;
+}
+.purple {
+  color: #800080;
+}
+border-purple {
+  border-color: #800080;
+}
+fill-purple {
+  fill: #800080;
+}
+stroke-purple {
+  stroke: #800080;
+}
+.bg-maroon {
+  background-color: #800000;
+}
+.maroon {
+  color: #800000;
+}
+border-maroon {
+  border-color: #800000;
+}
+fill-maroon {
+  fill: #800000;
+}
+stroke-maroon {
+  stroke: #800000;
 }
 .bg-white {
   background-color: #fff;
 }
-.bg-gray {
-  background-color: #aaa;
-}
-.bg-silver {
-  background-color: #ddd;
-}
-.bg-black {
-  background-color: #111;
-}
-/* Colors */
-.navy {
-  color: #001f3f;
-}
-.blue {
-  color: #0074d9;
-}
-.aqua {
-  color: #7fdbff;
-}
-.teal {
-  color: #39cccc;
-}
-.olive {
-  color: #3d9970;
-}
-.green {
-  color: #2ecc40;
-}
-.lime {
-  color: #01ff70;
-}
-.yellow {
-  color: #ffdc00;
-}
-.orange {
-  color: #ff851b;
-}
-.red {
-  color: #ff4136;
-}
-.fuchsia {
-  color: #f012be;
-}
-.purple {
-  color: #b10dc9;
-}
-.maroon {
-  color: #85144b;
-}
 .white {
   color: #fff;
 }
-.silver {
-  color: #ddd;
-}
-.gray {
-  color: #aaa;
-}
-.black {
-  color: #111;
-}
-/* Border colors 
-
-   Use with another border utility that sets border-width and style 
-   i.e .border { border-width: $1px; border-style: $solid; }     
-*/
-.border--navy {
-  border-color: #001f3f;
-}
-.border--blue {
-  border-color: #0074d9;
-}
-.border--aqua {
-  border-color: #7fdbff;
-}
-.border--teal {
-  border-color: #39cccc;
-}
-.border--olive {
-  border-color: #3d9970;
-}
-.border--green {
-  border-color: #2ecc40;
-}
-.border--lime {
-  border-color: #01ff70;
-}
-.border--yellow {
-  border-color: #ffdc00;
-}
-.border--orange {
-  border-color: #ff851b;
-}
-.border--red {
-  border-color: #ff4136;
-}
-.border--fuchsia {
-  border-color: #f012be;
-}
-.border--purple {
-  border-color: #b10dc9;
-}
-.border--maroon {
-  border-color: #85144b;
-}
-.border--white {
+border-white {
   border-color: #fff;
 }
-.border--gray {
-  border-color: #aaa;
-}
-.border--silver {
-  border-color: #ddd;
-}
-.border--black {
-  border-color: #111;
-}
-/* Fills for SVG */
-.fill-navy {
-  fill: #001f3f;
-}
-.fill-blue {
-  fill: #0074d9;
-}
-.fill-aqua {
-  fill: #7fdbff;
-}
-.fill-teal {
-  fill: #39cccc;
-}
-.fill-olive {
-  fill: #3d9970;
-}
-.fill-green {
-  fill: #2ecc40;
-}
-.fill-lime {
-  fill: #01ff70;
-}
-.fill-yellow {
-  fill: #ffdc00;
-}
-.fill-orange {
-  fill: #ff851b;
-}
-.fill-red {
-  fill: #ff4136;
-}
-.fill-fuchsia {
-  fill: #f012be;
-}
-.fill-purple {
-  fill: #b10dc9;
-}
-.fill-maroon {
-  fill: #85144b;
-}
-.fill-white {
+fill-white {
   fill: #fff;
 }
-.fill-gray {
-  fill: #aaa;
-}
-.fill-silver {
-  fill: #ddd;
-}
-.fill-black {
-  fill: #111;
-}
-/* Strokes for SVG */
-.strokes-navy {
-  stroke: #001f3f;
-}
-.strokes-blue {
-  stroke: #0074d9;
-}
-.strokes-aqua {
-  stroke: #7fdbff;
-}
-.strokes-teal {
-  stroke: #39cccc;
-}
-.strokes-olive {
-  stroke: #3d9970;
-}
-.strokes-green {
-  stroke: #2ecc40;
-}
-.strokes-lime {
-  stroke: #01ff70;
-}
-.strokes-yellow {
-  stroke: #ffdc00;
-}
-.strokes-orange {
-  stroke: #ff851b;
-}
-.strokes-red {
-  stroke: #ff4136;
-}
-.strokes-fuchsia {
-  stroke: #f012be;
-}
-.strokes-purple {
-  stroke: #b10dc9;
-}
-.strokes-maroon {
-  stroke: #85144b;
-}
-.strokes-white {
+stroke-white {
   stroke: #fff;
 }
-.strokes-gray {
-  stroke: #aaa;
+.bg-gray {
+  background-color: #808080;
 }
-.strokes-silver {
-  stroke: #ddd;
+.gray {
+  color: #808080;
 }
-.strokes-black {
-  stroke: #111;
+border-gray {
+  border-color: #808080;
+}
+fill-gray {
+  fill: #808080;
+}
+stroke-gray {
+  stroke: #808080;
+}
+.bg-silver {
+  background-color: #c0c0c0;
+}
+.silver {
+  color: #c0c0c0;
+}
+border-silver {
+  border-color: #c0c0c0;
+}
+fill-silver {
+  fill: #c0c0c0;
+}
+stroke-silver {
+  stroke: #c0c0c0;
+}
+.bg-black {
+  background-color: #000;
+}
+.black {
+  color: #000;
+}
+border-black {
+  border-color: #000;
+}
+fill-black {
+  fill: #000;
+}
+stroke-black {
+  stroke: #000;
 }
 
